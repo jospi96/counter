@@ -41,7 +41,7 @@ function createInput(id) {
             alert("You can only enter an  greater than 0");
             operator.querySelector("input").value=1
         }
-        operator.querySelector("input").value=checkInt(Number(element.value));
+        operator.querySelector("input").value=Number(checkInt(Number(element.value)).textContent);
 
     })
 }
@@ -50,7 +50,8 @@ function createMonitor(id){
     const monitor= document.createElement("p");
     monitor.type="p";
     monitor.id=id;
-    monitor.textContent="0";
+    const nodo=document.createTextNode("0");
+    monitor.appendChild(nodo);
     sMonitor.appendChild(monitor);
 
 

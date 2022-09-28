@@ -1,8 +1,12 @@
 function checkInt(num){
+    
     if(!Number.isInteger(num)){
-        return num.toFixed(2);
+        const nodo= document.createTextNode(num.toFixed(2));
+        return nodo;
     }else{
-        return num;
+        const nodo= document.createTextNode(num);
+
+        return nodo;
     }
 }
 
