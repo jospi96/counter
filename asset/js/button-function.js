@@ -26,8 +26,7 @@ function operation(id) {
         Number(operator.querySelector("input").value);
         
         console.log(sMonitor.querySelector("p").textContent);
-    sMonitor.querySelector("p").replaceChild
-    (checkInt(sot), sMonitor.querySelector("p").firstChild);
+    sMonitor.querySelector("p").replaceChild(checkInt(sot), sMonitor.querySelector("p").firstChild);
     texRed(sMonitor.querySelector("p"));
 
 
@@ -35,8 +34,7 @@ function operation(id) {
 
     function clean() {
         const nodo = document.createTextNode("0");
-        sMonitor.querySelector("p").replaceChild
-        (nodo,sMonitor.querySelector("p").firstChild )
+        sMonitor.querySelector("p").replaceChild(nodo,sMonitor.querySelector("p").firstChild);
         operator.querySelector("input").value = 1
         texRed(sMonitor.querySelector("p"));
 
